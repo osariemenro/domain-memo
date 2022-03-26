@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="main-logo">domain memo</div>
+
+            <ul class="nav-links">
+                <li><a href="./index.html">≡</a></li>
+            </ul>
+        </nav>
+
+        <div class="domain-memo-msg">
+            <!-- <p>Get your <span style="color: blueviolet;">Domain</span></p> -->
+        </div>
+        
+        <form>
+            <div id="group-input">
+                <input type="text" name="search-domain" id="domain-availability-checker">
+                <select name="domain-extension" id="extension-types">
+                    <option value="com">com</option>
+                    <option value="co">co</option>
+                    <option value="org">org</option>
+                    <option value="net">net</option>
+                </select>
+            </div>
+            <input type="button" value="search" id="domain-search-btn">
+        </form>
+
+    </header>
+
+    <div id="domain-available-msg" class="hide">
+        <ul id="domain-search-response">
+            <li><span id="domain-entered"></span> <span id="availability-status"></span></li>
+            <!-- <li><span id="domain-entered">gaiusrichardo.co</span> <span id="availability-status">available</span></li> -->
+        </ul>
+    </div>
+
+    <script src='app.js'></script>
+</body>
+</html>

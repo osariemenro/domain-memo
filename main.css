@@ -1,0 +1,169 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: rgb(98, 98, 226);
+}
+
+a:visited {
+    color: black;
+}
+
+/* presets */
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    font-family: "poppins";
+    background-color: #FDFDFE;
+}
+
+header {
+    /* background-color: #15382a; */
+    /* border-bottom: rgb(0, 0, 0) 2px solid; */
+    padding-bottom: 2rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 0rem 03rem;
+    /* border-bottom: rgb(231, 229, 229) 1px solid; */
+}
+
+header nav .main-logo {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+nav ul.nav-links li {
+    /* display: inline; */
+    /* margin-left: 3em; */
+}
+
+ul.nav-links li a {
+    font-size: 1.7em;
+    color: rgb(0, 0, 0);
+}
+
+/* message area */
+.domain-memo-msg {
+    /* border-top: rgb(231, 229, 229) 1px solid; */
+    /* margin-top: 1rem; */
+}
+
+.domain-memo-msg p {
+    font-size: 1em;
+}
+
+header form {
+    display: flex;
+    justify-content: center;
+    border-top: rgb(231, 231, 231) 1px solid;
+    padding-top: 2rem;
+
+}
+
+header form #group-input {
+    width: 40%;
+    /* height: 3rem; */
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border: rgb(0, 0, 0) 3px solid;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+header form #group-input input, select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 3rem;
+}
+
+#group-input #domain-availability-checker {
+    width: 83%;
+    padding-left: 1.2em;
+    border-radius: 8px;
+    font-family: "poppins";
+    font-size: 1em;
+    background-color: transparent;
+}
+
+#extension-types {
+    /* width: 13%; */
+    padding-left: 10px;
+    border-left: #15382a 3px solid;
+    height: 3rem !important;
+    font-family: "poppins";
+    font-size: 1em;
+}
+
+form #domain-search-btn {
+    font-family: "poppins";
+    font-size: 1em;
+    background-color: #000000;
+    color: white;
+    outline: none;
+    border: none;
+    width: 12%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*  */
+
+#domain-available-msg {
+    margin-top: 1rem;
+}
+
+#domain-search-response li {
+    background-color: white;
+    box-shadow: -1px 1px 3px 1px #f8f5f5;
+    width: 50%;
+    border-radius: 8px;
+    margin: 0.8rem auto 0rem auto;
+    padding: 5px 10px 5px 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#availability-status {
+    background-color: #F0F6FF;
+    font-size: 0.8em;
+    color: #7585E5;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+#domain-entered {
+    font-size: 1em;
+    color: rgb(139, 139, 139);
+    font-weight: 600;
+}
+
+
